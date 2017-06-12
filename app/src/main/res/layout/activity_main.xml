@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/search_top"
+        layout="@layout/search_bar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/rule_line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/search_top"
+        android:background="@color/reserve_line" />
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rule_line_tv"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/empty_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rule_line_tv"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/prompt_tv"
+            android:textColor="@color/grayish"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rule_line01_tv"
+            android:layout_width="200dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/reserve_line" />
+
+        <TextView
+            android:id="@+id/hanzi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rule_line01_tv"
+            android:layout_alignRight="@id/rule_line01_tv"
+            android:layout_below="@id/rule_line01_tv"
+            android:gravity="center"
+            android:text="@string/no_content_tv"
+            android:textColor="@color/gray7" />
+    </RelativeLayout>
+
+</RelativeLayout>

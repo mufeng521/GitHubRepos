@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GitHubRepos</string>
+
+    <!-- 用户搜索界面 -->
+    <string name="prompt_tv">搜索关键字：用户名</string>
+    <string name="no_content_tv">如无搜索结果则表示没有与输入关键字匹配的Repository信息</string>
+    <string name="template_user_agent">"%1$s/%2$s (Linux; Android)"</string>
+</resources>
